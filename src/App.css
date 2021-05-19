@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.F-bold {
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.F-large {
+    font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.M-b-5 {
+    margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Hvh-100 {
+    height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Wrem-26 {
+    width: 26rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.P-0 {
+    padding: 0;
 }
+
+.L-t-none {
+    list-style-type: none;
+}
+
+.Card-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Logo-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 80%;
+}
+
+.Sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.Sidenav a {
+    padding: 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+/* .Sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #17a2b8;
+    text-decoration: none;
+} */
+
+.Active-info {
+    border-right: 3px solid #17a2b8;
+    background-color: #d4e1e4;
+}
+
+.Side-info a:hover {
+    color: #f1f1f1;
+    background-color: #17a2b8;
+    text-decoration: none;
+}
+
+.Active-warning {
+    border-right: 3px solid#ffc107;
+    background-color: #e2ded0;
+}
+
+.Side-warning a:hover {
+    background-color:#ffc107;
+    text-decoration: none;
+    color: #212529;
+}
+
+.Active-danger {
+    border-right: 3px solid#dc3545;
+    background-color: #e6d7d9;
+}
+
+.Side-danger a:hover {
+    background-color:#dc3545;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .Sidenav {padding-top: 60px;}
+    .Sidenav a {font-size: 16px;}
+}
+
+.Navfix {
+    z-index: 2;
+}
+
+.ContentRight {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+.Has-err label {
+   color: red;
+}
+
+.Has-err > .form-control {
+    color: red;
+    border: 1px solid red;
+ }
